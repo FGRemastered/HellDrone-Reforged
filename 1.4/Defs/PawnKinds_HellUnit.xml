@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>AndroidHellUnit</defName>
+		<label>Hell Unit Colonist</label>
+		<race>AT_HellUnit</race>
+	<backstoryFiltersOverride>
+		<li>
+		<categories>
+			<li>ATR_NewbootAndroids</li>
+			<li>HellUnitBackstories</li>
+		</categories>
+		</li>
+	</backstoryFiltersOverride>
+	<maxGenerationAge>1</maxGenerationAge>
+		<defaultFactionType>PlayerColonyAndroid</defaultFactionType>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+	<initialResistanceRange>13~21</initialResistanceRange>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~20</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>8~20</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+	<!-- This will do nothing unless you xml patch the FactionDef to include this in its group makers!
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>AndroidHellUnitRaider</defName>
+		<label>Hell Unit Raider</label>
+		<race>AT_HellUnit</race>
+	<backstoryFiltersOverride>
+		<li>
+		<categories>
+			<li>HellUnitBackstories</li>
+		</categories>
+		</li>
+	</backstoryFiltersOverride>
+		<defaultFactionType>AndroidRebellionAtlas</defaultFactionType>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+	<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+	-->
+</Defs>

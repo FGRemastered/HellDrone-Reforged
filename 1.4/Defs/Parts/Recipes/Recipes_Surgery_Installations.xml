@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RecipeDef ParentName="ATR_MechanicalSurgeryInstallBodyPartBase">
+		<defName>InstallOLuciferiumPump</defName>
+		<label>install overcharged mechanite pump</label>
+		<description>Installs an overcharged mechanite pump.</description>
+		<jobString>Installing overcharged mechanite pump.</jobString>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<workAmount>1600</workAmount>
+		<surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>OLuciferiumPump</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>OLuciferiumPump</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ATR_MechaniteStorage</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>OLuciferiumPump</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="ATR_MechanicalSurgeryInstallBodyPartBase">
+		<defName>InstallRPowerClaw</defName>
+		<label>install robotic power claw</label>
+		<description>Installs an robotic power claw.</description>
+		<jobString>Installing robotic power claw.</jobString>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<workAmount>1600</workAmount>
+		<surgerySuccessChanceFactor>0.9</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RPowerClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RPowerClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ATR_MechanicalArm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RPowerClaw</addsHediff>
+	</RecipeDef>
+	<RecipeDef ParentName="ATR_MechanicalSurgeryInstallBodyPartBase">
+		<defName>InstallRRPlasmaClaw</defName>
+		<label>install robotic plasma claw</label>
+		<description>Installs an robotic plasma claw.</description>
+		<jobString>Installing robotic plasma claw.</jobString>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<workAmount>1600</workAmount>
+		<surgerySuccessChanceFactor>0.8</surgerySuccessChanceFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RPlasmaClaw</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RPlasmaClaw</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>ATR_MechanicalArm</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>RPlasmaClaw</addsHediff>
+	</RecipeDef>
+</Defs>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef ParentName="ATR_GeneratorBase">
+		<defName>HellUnitGeneratorAI</defName>
+		<label>Hell Unit</label>
+		<description>An uninitialized Hell Unit android. The hell unit is a specialized android that far surpasses even the most enhanced human thanks to its incredibly efficient AI and utilities. This AI has tweaked moral parameters, increasing rationality and reducing emotions in both combat and non-combat scenarios. An internal reward system was added for task completion - be it death-dealing or kitchen construction - to encourage certain behaviors.</description>
+		<graphicData>
+				<texPath>Things/Droids/hellunit/head/None_Average_Normal_south</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="ATReforged.CompProperties_GenericSpawner">
+				<pawnKind>AndroidHellUnit</pawnKind>
+			</li>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="ATR_GeneratorBase">
+		<defName>FennecAndroidGeneratorAI</defName>
+		<label>FENNIC Unit</label>
+		<description>An uninitialized mechanical fox-analogue designed for hunt, harassment, and rapid deployment strategies. A small, agile imitation fox that was originally developed to enhance sport hunting, able to chase down its kill and haul it back to its master with ease. It is fairly good with hauling items and killing other creatures of similar size.</description>
+		<graphicData>
+				<texPath>Things/Pawn/RoboFox/RFox_east</texPath>
+				<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="ATReforged.CompProperties_GenericSpawner">
+				<pawnKind>AndroidFox</pawnKind>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

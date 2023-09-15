@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.AlienBackstoryDef>
+		<defName>HellUnitBackstory</defName>
+		<title>Hell unit</title>
+		<titleShort>Hell unit</titleShort>
+		<baseDesc>This android is a Hell unit, primarily designed for close quarter combat.</baseDesc>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>HellUnitBackstories</li>
+		</spawnCategories>
+		<skillGains>
+			<li>
+				<key>Shooting</key>
+				<value>4</value>
+			</li>
+			<li>
+				<key>Melee</key>
+				<value>8</value>
+			</li>
+			<li>
+				<key>Crafting</key>
+				<value>4</value>
+			</li>
+		</skillGains>
+	</AlienRace.AlienBackstoryDef>
+</Defs>

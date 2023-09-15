@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="ATR_BaseMechanicalPawn">
+		<defName>AT_HellUnit</defName>
+		<label>Hell Unit</label>
+		<description>The hell unit is a specialized android that far surpasses even the most enhanced human thanks to its incredibly efficient AI and utilities. This AI has tweaked moral parameters, increasing rationality and reducing emotions in both combat and non-combat scenarios. An internal reward system was added for task completion - be it death-dealing or kitchen construction - to encourage certain behaviors.</description>
+		<alienRace>
+			<graphicPaths>
+				<body>HellDrone/body/</body>
+				<head>HellDrone/head/</head>
+				<skinShader>Cutout</skinShader>
+			</graphicPaths>
+			<generalSettings>
+				<alienPartGenerator>
+					<headTypes>
+						<li>HU_HellUnit_Male</li>
+						<li>HU_HellUnit_Female</li>
+						<li>HU_HellUnit_None</li>
+					</headTypes>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										 <only>RGBA(1,1,1,1)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>RGBA(0.94,0.94,0.94,1)</only>
+									</li>
+									<li>
+										<weight>5</weight>
+										<only>RGBA(0.90,0.90,0.90,1)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+			</generalSettings>
+		</alienRace>
+		<uiIconPath>Things/Droids/hellunit/head/Male_Average_Normal_south</uiIconPath>
+		<statBases>
+			<MarketValue>7000</MarketValue>
+			<MoveSpeed>8.20</MoveSpeed>
+			<ComfyTemperatureMin>-70</ComfyTemperatureMin>
+			<ComfyTemperatureMax>70</ComfyTemperatureMax>
+			<MentalBreakThreshold>0.12</MentalBreakThreshold>
+			<GlobalLearningFactor>0.2</GlobalLearningFactor>
+			<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+			<SocialImpact>1.25</SocialImpact>
+			<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+			<Mass>72.5</Mass>
+		</statBases>
+		<tools>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1.2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>22</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>1.2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>22</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<nameGenerator>AndroidHellUnit</nameGenerator>
+			<body>ATR_AndroidBody</body>
+			<baseHealthScale>1.5</baseHealthScale>
+			<baseHungerRate>0.7</baseHungerRate>
+			<baseBodySize>1.2</baseBodySize>
+		</race>
+        <recipes>
+            <li>MHC_CoolantInjection</li>
+            <li>MHC_LubricantInjection</li>
+        </recipes>
+		<modExtensions>
+            <li Class="MechHumanlikes.MHC_MechanicalPawnExtension">
+                <droneSkillLevel>15</droneSkillLevel>
+                <useCustomNoneGenderNameMakers>true</useCustomNoneGenderNameMakers>
+                <letPawnKindHandleDroneBackstories>true</letPawnKindHandleDroneBackstories>
+                <blacklistedNeeds>
+                    <li>DrugDesire</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+                    <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+                </blacklistedNeeds>
+                <blacklistedSapientNeeds>
+                    <li>RoomSize</li>
+                    <li>Joy</li>
+                    <li>Beauty</li>
+                    <li>Comfort</li>
+                    <li>Outdoors</li>
+                    <li>Indoors</li>
+                </blacklistedSapientNeeds>
+                <mechanicalNeeds>
+                    <li><key>MHC_Coolant</key><value>0.5</value></li>
+                    <li><key>MHC_Lubrication</key><value>0.5</value></li>
+                </mechanicalNeeds>
+            </li>
+            <li Class="ATReforged.ATR_PawnExtension">
+                <isAndroid>true</isAndroid>
+            </li>
+            <li MayRequire="Killathon.SkyMind.SkyMindNetwork" Class="SkyMind.SMN_PawnSkyMindExtension">
+                <defaultTransceiverImplant>ATR_AutonomousCore</defaultTransceiverImplant>
+                <defaultReceiverImplant>ATR_ReceiverCore</defaultReceiverImplant>
+            </li>
+            <li Class="MechHumanlikes.MDR_ProgrammableDroneExtension" MayRequire="Killathon.MechanicalHumanlikes.MechDronesReprogrammed">
+                <maxDirectives>7</maxDirectives>
+            </li>
+		</modExtensions>
+		<butcherProducts>
+			<Plasteel>50</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<AIPersonaCore>1</AIPersonaCore>
+		</butcherProducts>
+	</AlienRace.ThingDef_AlienRace>
+</Defs>

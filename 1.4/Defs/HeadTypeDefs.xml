@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		<!-- Tier 4 -->
+		<!-- Male -->
+		<HeadTypeDef>
+			<defName>HU_HellUnit_Male</defName>
+			<graphicPath>HellDrone/head/HellDrone_Average_Normal</graphicPath>
+			<gender>Male</gender>
+		</HeadTypeDef>
+		<!-- Female -->
+		<HeadTypeDef>
+			<defName>HU_HellUnit_Female</defName>
+			<graphicPath>HellDrone/head/HellDrone_Average_Normal</graphicPath>
+			<gender>Female</gender>
+		</HeadTypeDef>
+		<!-- None -->
+		<HeadTypeDef>
+			<defName>HU_HellUnit_None</defName>
+			<graphicPath>HellDrone/head/HellDrone_Average_Normal</graphicPath>
+			<gender>None</gender>
+		</HeadTypeDef>
+</Defs>

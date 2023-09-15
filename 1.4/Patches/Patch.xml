@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>	
+	<!-- Add Hell Unit to the mechanical surgery recipeUsers to get all appropriate surgeries -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/RecipeDef[@Name="ATR_surgeryMechanical"]/recipeUsers</xpath>
+		<value>
+			<li>AT_HellUnit</li>
+		</value>
+	</Operation>
+</Patch>

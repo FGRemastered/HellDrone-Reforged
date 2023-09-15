@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Android tiers HellDrone Reforged</name>
+	<packageId>Helldrone.AndroidTiersHelldroneExtension</packageId>
+	<authors>
+		<li>HellDrone</li>
+		<li>Atlas</li>
+		<li>Killathon</li>
+		<li>FG_Remastered</li>
+	</authors>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>Killathon.MechHumanlikes.AndroidTiersCore</packageId>
+			<displayName>MH: Android Tiers Core</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2974536022</steamWorkshopUrl>
+			<downloadUrl>https://github.com/RWDevathon/Android-Tiers-Reforged-Core</downloadUrl>
+		</li>
+		<!-- <li> -->
+			<!-- <packageId>Killathon.MechHumanlikes.AndroidTiers</packageId> -->
+			<!-- <displayName>MH: Android Tiers</displayName> -->
+			<!-- <steamWorkshopUrl>steam://url/CommunityFilePage/2974546748</steamWorkshopUrl> -->
+			<!-- <downloadUrl>https://github.com/RWDevathon/MH-Android-Tiers</downloadUrl> -->
+		<!-- </li> -->
+		<li>
+			<packageId>Killathon.MechHumanlikes.MechanicalBiomimetics</packageId>
+			<displayName>MH: Mechanical Biomimetics</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2974549926</steamWorkshopUrl>
+			<downloadUrl>https://github.com/RWDevathon/Android-Tiers-Biomimetics</downloadUrl>
+		</li>
+	</modDependencies>
+	<description>Made by Helldrone with coding by Atlas, updated by Killathon for his rewrite of Android Tiers and updated again to Killathon's Mechanical Humanlikes framework by FG_Remastered.
+Adds the following to the game:
+- Hell Unit Android
+- Robo Fennec Fox
+- Robotic Power claw
+- Robotic Plasma Claw 
+- Overcharged Luciferium pumps
+- 4 New Research items
+
+Requires MH:Biomimetics and its dependencies to be loaded before this.
+Grab it from here: steam://url/CommunityFilePage/2974549926</description>
+</ModMetaData>
