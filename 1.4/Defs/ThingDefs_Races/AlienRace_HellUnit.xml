@@ -41,7 +41,7 @@
 				</alienPartGenerator>
 			</generalSettings>
 		</alienRace>
-		<uiIconPath>Things/Droids/hellunit/head/Male_Average_Normal_south</uiIconPath>
+		<uiIconPath>HellDrone/head/HellDrone_Average_Normal_south</uiIconPath>
 		<statBases>
 			<MarketValue>7000</MarketValue>
 			<MoveSpeed>8.20</MoveSpeed>

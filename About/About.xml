@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Android tiers HellDrone Reforged</name>
-	<packageId>Helldrone.AndroidTiersHelldroneExtension</packageId>
+	<packageId>Helldrone.AndroidTiersHelldroneReforged</packageId>
 	<authors>
 		<li>HellDrone</li>
 		<li>Atlas</li>
